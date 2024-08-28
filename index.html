@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <title>Jonathan's Portfolio</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Swanky+and+Moo+Moo&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <style>
+
+            .material-symbols-outlined {
+            vertical-align: text-top;
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 40
+            }
+
+       
+            .rubik-light {
+                font-family: "Rubik", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 400;
+                font-style: normal; 
+            }
+
+            .bungee-tint-regular {
+                font-family: "Bungee Tint", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+
+
+            .reenie-beanie-regular {
+                font-family: "Reenie Beanie", cursive;
+                font-weight: 400;
+                font-style: normal;
+            }
+
+
+            button {
+                 
+                font-family:"Reenie Beanie", cursive;
+                font-weight: 700;
+                font-size: 30px;
+                font-style: normal;
+                color: rgb(7, 35, 57);
+            }
+
+
+
+            h1 {
+                font-family: "Rubik", sans-serif;
+                font-size: 60px;
+                color: rgb(7, 35, 57);
+            }
+
+            h2 {
+                font-family: "Rubik", sans-serif;
+                font-size: 30px;
+                color: rgb(7, 35, 57);
+            }
+
+            h3 {
+                font-family: "Rubik", sans-serif;
+                color: antiquewhite;
+                font-size: 24px;
+                font-weight: 700;
+            }
+
+           
+            p {
+                font-family: "Rubik", sans-serif;
+                font-size: 30px;
+                font-weight: 200;
+               
+            }
+
+            .body {
+                position: relative;
+                padding-bottom: 500px;
+                margin:0;
+                padding-top: 150px;
+            }
+        
+            .header{
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                background-color: rgb(7, 35, 57);
+                height: 120px;
+                transition: 2s;
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                margin-bottom: 50px;
+                
+            }
+
+            .header:hover {
+                background-color: rgb(3, 41, 77);;
+                transition: 1.2s;
+                cursor: pointer;
+
+            }
+
+            .left-section {
+                display: flex;
+                flex-direction: row;
+                width: 30%;
+                align-items: center;
+                justify-content: space-around;
+            }
+
+            .middle-section {
+                display: flex;
+                flex-direction: row;
+                width: 30%;
+                align-items: center;
+                justify-content: space-around;
+            }
+
+            .right-section {
+                display: flex;
+                flex-direction: row;
+                flex: 1;
+                align-items: center;
+                justify-content: space-around;
+            }
+
+            .header-tag {
+                
+                margin-left: 20px;
+                color: rgb(172, 244, 255);;
+                font-variant: small-caps;
+                display: flex;
+                flex: 1;
+                text-align: center;
+                transition: 1s;
+                opacity: 0.8;
+            }
+
+            .greeting {
+                font-family: "Reenie Beanie", cursive;
+                text-align: center;
+                font-size: 50px;
+                font-weight: 400;
+                margin-bottom: 0; 
+            }   
+
+            .profession {
+                margin-top: 0;
+                text-align: center;
+            }
+           
+            .profile-pic{
+                width: 300px;
+                border-radius: 10px;
+            }
+
+            .profile-statement {
+                font-size: 24px;
+                color: rgb(7, 35, 57);
+                text-align: center;
+                font-weight: 400;
+                
+            }
+
+            .profile-buttons {
+                
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                
+            }
+
+            .mail-button {
+                font-family: "Rubik", sans-serif;
+                font-size: 30px;
+                color: rgb(7, 35, 57);
+                vertical-align: middle;
+                background-color: antiquewhite;
+                border-radius: 16px;
+                border: 1px;
+                border-style: solid;
+                border-color: rgb(7, 35, 57);
+                opacity: 0.8;
+                transition: 1s;
+                width: 170px;
+                height: 50px;
+            }
+
+            .mail-button:hover{
+                opacity: 1;
+                background-color:rgb(7, 35, 57); 
+                color: antiquewhite;
+                height:60px;
+                width: 230px;
+                font-weight: bolder;
+                cursor: grab;
+            }
+
+            .profile-box {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                padding-bottom: 200px;
+                border-bottom-width:80% ;
+                border-bottom-style: solid;
+                border-color: rgb(7, 35, 57);
+                
+            }
+
+            .profile-pic-block {
+                width: 280px;
+                margin-left: 80px;
+                margin-right: 60px;
+            }
+
+            .profile-statement-block {
+                width: 980px;
+                vertical-align: top;
+            }
+
+            .exp-flexbox {
+                border-bottom-width:80% ;
+                border-bottom-style: solid;
+                border-color: rgb(7, 35, 57);
+                padding-bottom: 110px;
+                opacity: 0.8;
+            }
+            
+            .exp-statement {
+                font-size: 60px;
+                font-weight: 700;
+                text-align: center;
+                margin-top:100px;
+                margin-bottom: 100px;
+                color: rgb(7, 35, 57);;
+            }
+
+            .experience-block {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: center;
+                margin-left: 30px;
+                margin-right: 30px;
+                height:100px;
+                font-weight: 500;
+                border: 1px;
+                border-style: solid;
+                background-color: antiquewhite;
+                border-color: rgb(7, 35, 57);
+                border-radius: 10px;
+                text-align: center;
+                transition: 2s;
+            }
+
+            .experience-block:hover{
+                transition: 1s;
+                color: antiquewhite;
+                background-color: rgb(7, 35, 57);
+                cursor: pointer;
+            }
+
+            .project-title {
+                text-align: center;
+                padding: auto;
+            }
+
+            .project-flexbox {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-evenly;                
+            }
+
+            .module1 {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                border: 2px solid;
+                border-radius: 12px;
+                border-color: rgb(52, 46, 45);
+                width: 420px;
+                height: 500px;
+            }
+
+            .module1-name {
+                text-align: center;
+            }
+
+            .module1-picbox {
+                justify-content: center;
+                border: 2px solid;
+                border-color: rgb(39, 51, 67);
+                height: 292px;
+                width: fit-content;
+                border-radius: 12px;
+                margin-left: 40px;
+                margin-right: 40px;
+            
+            }
+
+            .module1-pic {
+                width: 338px;
+                border-radius: 12px;
+                height: inherit;
+            }
+        
+            .m1-viewmore {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                width: 100%;
+            }
+
+            .m1-button {
+                width: 180px;
+                height:50px;
+                border: 3px groove;
+                border-color: rgb(39, 51, 67);
+                background-color: antiquewhite;
+                border-radius: 12px;
+                text-align: center; 
+                transition: 1s;
+                opacity: 0.8;
+            }
+            
+            .m1-button:hover {
+                opacity: 1;
+                font-size: 40px;
+                width: 220px;
+                height: 70px;
+                background-color: rgb(2, 73, 74);
+                color: antiquewhite;
+            }
+
+            .m1-button:active {
+                margin-left: 20px;
+                margin-bottom: 20px;
+                font-size: 40px;
+                width: 220px;
+                height: 70px;
+                background-color: rgb(135, 222, 247);
+                color: rgb(4, 90, 90);
+            }
+
+            .module2 {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                border: 2px solid;
+                border-radius: 12px;
+                border-color: rgb(52, 46, 45);
+                width: 420px;
+                height: 500px;
+            }
+
+            .module2-name {
+                text-align: center;
+            }
+
+            .module2-picbox {
+                height: auto;
+                border: 2px solid;
+                border-color: rgb(39, 51, 67);
+                height: 292px;
+                justify-items: center;
+                border-radius: 12px;
+                margin-left: 40px;
+                margin-right: 40px;
+            
+            }
+
+            .module2-pic {
+                width: 100%;
+                height: inherit;
+                border-radius: 12px;
+                
+                
+                
+            }
+        
+            .m2-viewmore {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                width: 100%;
+            }
+
+            .m2-button {
+                width: 180px;
+                height:50px;
+                border: 3px groove;
+                border-color: rgb(39, 51, 67);
+                background-color: antiquewhite;
+                border-radius: 12px;
+                text-align: center; 
+                transition: 1s;
+                opacity: 0.8;
+            }
+            
+            .m2-button:hover {
+                opacity: 1;
+                font-size: 40px;
+                width: 220px;
+                height: 70px;
+                background-color: rgb(39, 51, 67);
+                color: antiquewhite;
+            }
+
+            .m2-button:active {
+                margin-left: 20px;
+                margin-bottom: 20px;
+                font-size: 40px;
+                width: 220px;
+                height: 70px;
+                background-color: rgb(135, 222, 247);
+                color: rgb(4, 90, 90);
+            }
+          
+            .module3 {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                border: 2px solid;
+                border-radius: 12px;
+                border-color: rgb(52, 46, 45);
+                width: 420px;
+                height: 500px;
+            }
+
+            .module3-name {
+                text-align: center;
+            }
+
+            .module3-picbox {
+                justify-content: center;
+                height: auto;
+                border: 2px solid;
+                border-color: rgb(39, 51, 67);
+                height: 292px;
+                border-radius: 12px;
+                margin-left: 40px;
+                margin-right: 40px;
+            
+            }
+
+            .module3-pic {
+                width: 100%;
+                border-radius: 12px;
+                height: inherit;
+            }
+        
+            .m3-viewmore {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                width: 100%;
+            }
+
+            .m3-button {
+                width: 180px;
+                height:50px;
+                border: 3px groove;
+                border-color: rgb(39, 51, 67);
+                background-color: antiquewhite;
+                border-radius: 12px;
+                text-align: center; 
+                transition: 1s;
+                opacity: 0.8;
+            }
+            
+            .m3-button:hover {
+                opacity: 1;
+                font-size: 40px;
+                width: 220px;
+                height: 70px;
+                background-color: rgb(39, 51, 67);
+                color: antiquewhite;
+            }
+
+            .m3-button:active {
+                margin-left: 20px;
+                margin-bottom: 20px;
+                font-size: 40px;
+                width: 220px;
+                height: 70px;
+                background-color: rgb(135, 222, 247);
+                color: rgb(4, 90, 90);
+            }
+
+            .module4 {
+                margin-top: 65px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                border: 2px solid;
+                border-radius: 12px;
+                border-color: rgb(52, 46, 45);
+                width: 420px;
+                height: 500px;
+            }
+
+            .module4-name {
+                text-align: center;
+            }
+
+            .module4-picbox {
+                justify-content: center;
+                height: auto;
+                border: 2px solid;
+                border-color: rgb(39, 51, 67);
+                height: 292px;
+                border-radius: 12px;
+                margin-left: 40px;
+                margin-right: 40px;
+            
+            }
+
+            .module4-pic {
+                width:100%;
+               height: inherit;
+                border-radius: 12px;
+            }
+        
+            .m4-viewmore {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                width: 100%;
+            }
+
+            .m4-button {
+                width: 180px;
+                height:50px;
+                border: 3px groove;
+                border-color: rgb(39, 51, 67);
+                background-color: antiquewhite;
+                border-radius: 12px;
+                text-align: center; 
+                transition: 1s;
+                opacity: 0.8;
+            }
+            
+            .m4-button:hover {
+                opacity: 1;
+                font-size: 40px;
+                width: 220px;
+                height: 70px;
+                background-color: rgb(39, 51, 67);
+                color: antiquewhite;
+            }
+
+            .m4-button:active {
+                margin-left: 20px;
+                margin-bottom: 20px;
+                font-size: 40px;
+                width: 220px;
+                height: 70px;
+                background-color: rgb(135, 222, 247);
+                color: rgb(4, 90, 90);
+            }
+
+            .module5 {
+                margin-top: 65px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                border: 2px solid;
+                border-radius: 12px;
+                border-color: rgb(52, 46, 45);
+                width: 420px;
+                height: 500px;
+            }
+
+            .module5-name {
+                text-align: center;
+            }
+
+            .module5-picbox {
+                justify-content: center;
+                height: auto;
+                border: 2px solid;
+                border-color: rgb(39, 51, 67);
+                height: 292px;
+                border-radius: 12px;
+                margin-left: 40px;
+                margin-right: 40px;
+            
+            }
+
+            .module5-pic {
+                width: 100%;
+                border-radius: 12px;
+                height: inherit;
+            }
+        
+            .m5-viewmore {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                width: 100%;
+            }
+
+            .m5-button {
+                width: 180px;
+                height:50px;
+                border: 3px groove;
+                border-color: rgb(39, 51, 67);
+                background-color: antiquewhite;
+                border-radius: 12px;
+                text-align: center; 
+                transition: 1s;
+                opacity: 0.8;
+            }
+            
+            .m5-button:hover {
+                opacity: 1;
+                font-size: 40px;
+                width: 220px;
+                height: 70px;
+                background-color: rgb(39, 51, 67);
+                color: antiquewhite;
+            }
+
+            .m5-button:active {
+                margin-left: 20px;
+                margin-bottom: 20px;
+                font-size: 40px;
+                width: 220px;
+                height: 70px;
+                background-color: rgb(135, 222, 247);
+                color: rgb(4, 90, 90);
+            }
+
+            .module6 {
+                margin-top: 65px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                border: 2px solid;
+                border-radius: 12px;
+                border-color: rgb(52, 46, 45);
+                width: 420px;
+                height: 500px;
+            }
+
+            .module6-name {
+                text-align: center;
+            }
+
+            .module6-picbox {
+                justify-content: center;
+                height: auto;
+                border: 2px solid;
+                border-color: rgb(39, 51, 67);
+                height: 292px;
+                border-radius: 12px;
+                margin-left: 40px;
+                margin-right: 40px;
+            
+            }
+
+            .module6-pic {
+                width: 100%;
+                border-radius: 12px;
+                height: inherit;
+            }
+        
+            .m6-viewmore {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                width: 100%;
+            }
+
+            .m6-button {
+                width: 180px;
+                height:50px;
+                border: 3px groove;
+                border-color: rgb(39, 51, 67);
+                background-color: antiquewhite;
+                border-radius: 12px;
+                text-align: center; 
+                transition: 1s;
+                opacity: 0.8;
+            }
+            
+            .m6-button:hover {
+                opacity: 1;
+                font-size: 40px;
+                width: 220px;
+                height: 70px;
+                background-color: rgb(39, 51, 67);
+                color: antiquewhite;
+            }
+
+            .m6-button:active {
+                margin-left: 20px;
+                margin-bottom: 20px;
+                font-size: 40px;
+                width: 220px;
+                height: 70px;
+                background-color: rgb(135, 222, 247);
+                color: rgb(4, 90, 90);
+            }
+
+            .copyright-flexbox {
+                display: flex;
+                height: fit-content;
+                justify-content: center;
+                vertical-align: middle;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                left: 0;
+            }
+
+            .copyright-statement {
+                font-size: 20px;
+                font-weight: bold;
+                color: rgb(171, 171, 171) ;
+            }
+
+        </style>
+
+    </head> <!--end of head section.-->
+
+
+
+    <body class="body">
+
+        <div class="header">
+
+            <div class="left-section">
+
+
+                <div class="header-tag" > <p> &#9818; <strong> CodeBy&#9986;AMAW </strong> </p> </div>
+
+            </div>
+
+            <div class="middle-section">
+
+            </div>
+            <div class="right-section">
+
+                <div class="about-header">  <h3> ABOUT </h3> </div>
+                <div class="exp-header"> <h3> EXPERIENCE </h3> </div>
+                <div class="project-header"> <h3> PROJECTS </h3> </div>
+                <div class="contact-header"> <h3> CONTACTS </h3> </div>
+            
+            </div>
+
+        </div>
+
+        <div class="head-block">  
+             <!--vertical layout 1 ie head statement-->
+            <p class="greeting"> Hello, I am </p>
+
+                <h1 class="profession" > JONATHAN KAMAU &#10061; Engineering Student</h1> 
+        
+              
+            
+
+
+        </div>
+        
+        <div class="profile-box"> <!--vertical layout 2 ie profile pic and profile statement-->
+
+            <div class="profile-pic-block">  <!--nested horizontal layout 1 ie profile pic and description-->
+                <img class="profile-pic" src="Website Images/Jonathan Profile Pic.jpeg">
+            </div>
+
+            <div class="profile-statement-block">  <!--nested horizontal layout 2 ie profile description-->
+                <p class="profile-statement">
+                    I am an industrious and passionate engineer-in-training with a creative design ethos and keen attention
+                    to detail. A results-oriented individual with a growing enthusiasm for digital-systems integration and
+                    telecommunications. Naturally a quick learner, I diligently seek opportunities to gain valuable experience
+                    and bolster my soft and technical skills.Find below a documentation of my projects and certifications.
+
+                </p>
+                <div class="profile-buttons">
+                    
+                    <button class="mail-button"> E-MAIL &#9993; </button>
+                </div>
+                
+            </div> 
+        </div>
+
+        <div> <!--vertical layout 3 ie experience block-->
+            <div class="exp-flexbox">
+
+                <h1 class="exp-statement" > MY EXPERIENCE </h1> 
+                
+                
+
+                <div class="experience-block">
+                    <div> <p> <strong>HTML</strong> <br> &#10022;&#10022;&#10022;&#10023;&#10023; </p></div>
+                    <div> &#9819; </div>
+                    <div> <p> <strong>CSS</strong> <br> &#10022;&#10022;&#10023;&#10023;&#10023;  </p> </div> 
+                    <div> &#9819; </div> 
+                    <div> <p> <strong>Embedded Systems</strong> <br> &#10022;&#10022;&#10023;&#10023;&#10023; </p> </div>
+                    <div> &#9819; </div>
+                    <div> <p> <strong>Telecommunications</strong> <br> &#10022;&#10022;&#10022;&#10023;&#10023; </p> </div>
+                    <div> &#9819; </div>
+                    <div> <p> <strong>Github</strong> <br> &#10022;&#10022;&#10023;&#10023;&#10023; </p> </div>
+                    
+                </div>
+
+            </div>
+           
+
+            <div>
+                <h1 class="project-title"> MY PROJECTS </h1>
+
+                <div class="project-flexbox">
+
+                    <div class="module1">
+                        
+                        <div class="module1-name" > 
+
+                            <h2 > &#10065; Module 1 </h2> 
+                        
+                        </div>
+                        
+                        <div class="module1-picbox"> 
+                             <img class="module1-pic" src="Website Images/MODULE 1 PIC.jpeg" >
+                        </div>
+
+                        <div class="m1-viewmore" >  
+                           <a href="https://github.com/kodebyKamaw/KAMAW-PROJECT-PORTFOLIO/blob/main/MODULE1%20.md" target="_blank" title="Module 1-Git Demo">
+                            <button class="m1-button"> View More </button>
+
+                           </a>
+                            
+                        </div>
+
+                    </div>
+                        
+
+                    <div class="module2">
+                    
+                        <div class="module2-name" > 
+
+                            <h2 > &#10064; Module 2 </h2> 
+                        
+                        </div>
+                        
+                        <div class="module2-picbox"> 
+                             <img class="module2-pic" src="Website Images/MODULE 2 PIC.jpeg" >
+                        </div>
+
+                        <div class="m2-viewmore" >  
+                            <button class="m2-button"> View More </button>
+                        </div>
+
+                    </div>
+
+
+                    <div class="module3">
+                    
+                        <div class="module3-name" > 
+
+                            <h2 > &#10064; Module 3 </h2> 
+                        
+                        </div>
+                        
+                        <div class="module3-picbox"> 
+                             <img class="module3-pic" src="Website Images/MODULE 3 PIC.jpeg">
+                        </div>
+
+                        <div class="m3-viewmore" >  
+                            <button class="m3-button"> View More </button>
+                        </div>
+
+                    </div>
+
+
+                    <div class="module4">
+                    
+                        <div class="module4-name" > 
+
+                            <h2 > &#10064; Module 4 </h2> 
+                        
+                        </div>
+                        
+                        <div class="module4-picbox"> 
+                             <img class="module4-pic" src="Website Images/MODULE 4 PIC.jpeg" >
+                        </div>
+
+                        <div class="m4-viewmore" >  
+                            <button class="m4-button"> View More </button>
+                        </div>
+
+                    </div>
+
+
+                    <div class="module5">
+                    
+                        <div class="module5-name" > 
+
+                            <h2 > &#10064; Module 5 </h2> 
+                        
+                        </div>
+                        
+                        <div class="module5-picbox"> 
+                             <img class="module5-pic" src="Website Images/MODULE 5 PIC.jpeg" >
+                        </div>
+
+                        <div class="m5-viewmore" >  
+                            <button class="m5-button"> View More </button>
+                        </div>
+
+                    </div>
+
+
+                    <div class="module6">
+                    
+                        <div class="module6-name" > 
+
+                            <h2 > &#10064; Module 6 </h2> 
+                        
+                        </div>
+                        
+                        <div class="module6-picbox"> 
+                             <img class="module6-pic" src="Website Images/MODULE 6 PIC.jpeg" >
+                        </div>
+
+                        <div class="m6-viewmore" >  
+                            <button class="m6-button"> View More </button>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="copyright-flexbox">
+            <p class="copyright-statement "> Copyright <span class="material-symbols-outlined">
+                copyright
+                </span> 2024 Jonathan Kamau. All Rights Reserved.</p>
+        </div>
+              
+        </div>
+
+       
+        
+       
+    </body>
+
+</html>
